@@ -78,8 +78,13 @@
               your culinary senses!
             </p>
           </div>
-          <div class="col-12 col-sm align-self-center">
-            <img src="img/logo.png" alt="Alberto" class="img-fluid" />
+          <div class="col-12 col-sm-3 align-self-center">
+            <img src="img/logo.png" alt="logo" class="img-fluid" />
+          </div>
+          <div class="col-12 col-sm-3 align-self-center">
+            <button type="submit" class="btn btn-success" onClick="smoothsc">
+              Reserve Table
+            </button>
           </div>
         </div>
       </div>
@@ -98,7 +103,10 @@
               alt="uthappizza"
             />
             <div class="media-body">
-              <h2 class="mt-0">Uthappizza</h2>
+              <h2 class="mt-0">
+                Uthappizza <span class="badge badge-danger">HOT</span>
+                <span class="badge badge-pill badge-secondary">9.5$</span>
+              </h2>
               <p class="d-none d-sm-block">
                 A unique combination of Indian Uthappam (pancake) and Italian
                 pizza, topped with Cerignola olives, ripe vine cherry tomatoes,
@@ -116,7 +124,9 @@
         <div class="col col-sm col-md">
           <div class="media">
             <div class="media-body">
-              <h2>Weekend Grand Buffet</h2>
+              <h2>
+                Weekend Grand Buffet <span class="badge badge-danger">NEW</span>
+              </h2>
               <p class="d-none d-sm-block">
                 Featuring mouthwatering combinations with a choice of five
                 different salads, six enticing appetizers, six main entrees and
@@ -154,6 +164,53 @@
                 world, he specializes in creating mouthwatering Indo-Italian
                 fusion experiences.
               </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row row-content align-self-center" id="form">
+        <div class="col-12 col-sm-7 offset-2">
+          <div class="card">
+            <h3 class="card-header bg-success text-white">Reserve A Table</h3>
+            <div class="card-body">
+              <dl class="row">
+                <dt class="col-2">number of guests</dt>
+                <dd class="col-9">
+                  <form action="">
+                    <input type="radio" id="1" name="counting" value="1" />
+                    <label for="male">1</label>
+                    <input type="radio" id="2" name="counting" value="2" />
+                    <label for="female">2</label>
+                    <input type="radio" id="3" name="counting" value="3" />
+                    <label for="other">3</label>
+                    <input type="radio" id="4" name="counting" value="4" />
+                    <label for="male">4</label>
+                    <input type="radio" id="5" name="counting" value="5" />
+                    <label for="female">5</label>
+                    <input type="radio" id="6" name="counting" value="6" />
+                    <label for="other">6</label>
+                  </form>
+                </dd>
+                <dt class="col-2 mt-3">Date and Time</dt>
+                <dd class="col-10 align-items-center mt-3">
+                  <div class="row">
+                    <form action="">
+                      <input
+                        type="text"
+                        name="date"
+                        id="date"
+                        placeholder="Date"
+                      />
+                      <input
+                        type="text"
+                        name="time"
+                        id="time"
+                        placeholder="Time"
+                      />
+                    </form>
+                  </div>
+                </dd>
+              </dl>
             </div>
           </div>
         </div>
