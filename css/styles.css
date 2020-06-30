@@ -45,3 +45,22 @@ a {
 a:hover {
   text-decoration: none;
 }
+
+.tab-content {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+}
+.carousel {
+  background: #512da8;
+}
+.carousel-item {
+  height: 300px;
+}
+.carousel-item img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  min-height: 300px;
+}
